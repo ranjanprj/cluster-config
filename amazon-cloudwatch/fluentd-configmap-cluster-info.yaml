@@ -1,0 +1,20 @@
+---
+apiVersion: v1
+data:
+  cluster.name: adorable-monster-1598052634
+  logs.region: us-east-2
+  # The below configuration file is in JSON format.
+  # Please ensure you keep it well-formed if you modify it.
+  cluster-info.json: |
+    {
+      "cluster": {
+        "name": "adorable-monster-1598052634"
+      },
+      "logs": {
+        "region": "us-east-2"
+      }
+    }
+kind: ConfigMap
+metadata:
+  name: cluster-info
+  namespace: amazon-cloudwatch
